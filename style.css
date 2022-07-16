@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.cloud {
+    position: absolute;
+    height: 20vh;
+    width: 25vw;
+    left: 70vw;
+    top: 10vh;
+    top: 10px;
+    z-index: 3;
+}
+
+.image {
+    position: absolute;
+    height: 10vh;
+    width: 5vw;
+    left: 50vw;
+    top: 5vh;
+    top: 5px;
+    z-index: 2;
+}
+
+.imageTwo {
+    position: absolute;
+    height: 10vh;
+    width: 5vw;
+    left: 50vw;
+    top: 5vh;
+    margin-left: 180px;
+    margin-top: 110px;
+    z-index: 2;
+}
+
+.imageThree {
+    position: absolute;
+    height: 10vh;
+    width: 5vw;
+    left: 50vw;
+    top: 5vh;
+    margin-left: 430px;
+    margin-top: 260px;
+    z-index: 2;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.arrow {
+    position: absolute;
+    height: 10vh;
+    left: 78vw;
+    top: 12vw;
+    display: none;
+    z-index: 3;
+}
+
+.start {
+    position: absolute;
+    left: 40vw;
+    top: 50vh;
+    height: 10vh;
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.stop {
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+
+p {
+    right: 10px;
+    position: absolute;
+    font-family: sans-serif;
+    top: 5px;
+}

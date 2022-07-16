@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plane Attack</title>
+    <meta charset="UTF-8">
+    <style>
+        #airplane {
+            -moz-transform: scaleX(1);
+            -o-transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            -ms-transform: scaleX(1);
+            background: url('https://clipartix.com/wp-content/uploads/2016/04/Airplane-coloring-page-free-clip-art.png') 190px
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="first.js"></script>
+</head>
+
+<body>
+
+    <div id="airplane"></div>
+    <script>
+        var plane = document.getElementById("airplane"); // Klavye yön tuşları (uçağın hareketi için)
+        /* Sol Top Kodu: 37
+         Ust Top Kodu: 38
+         Sağ Top Kodu: 39
+         Alt Top Kodu: 40*/
+        window.onkeydown = function(event) {
+
+            var y = plane.offsetTop,
+                x = plane.offsetLeft;
+
+
+            if (event.keyCode == 37) {
+                plane.style.left = (x - 5) + "px";
+
+            } else if (event.keyCode == 38) {
+                plane.style.top = (y - 5) + "px";
+            } else if (event.keyCode == 39) {
+                plane.style.left = (x + 5) + "px";
+            } else if (event.keyCode == 40) {
+                plane.style.top = (y + 5) + "px";
+            }
+
+        }
+    </script>
+
+
+    <img src="http://images.clipartpanda.com/cloudy-clipart-black-and-white-cloud-clip-art-stylized_basic_cloud.png" alt="Cloud" class="cloud" />
+
+    <img src="https://ih1.redbubble.net/image.3244657506.4044/flat,128x,075,f-pad,128x128,f8f8f8.jpg" alt="Image" class="image" />
+
+    <img src="https://i.pinimg.com/474x/83/ef/8c/83ef8cd867a637f4171ea1da68090698.jpg" alt="Image" class="imageTwo" />
+
+    <img src="https://ih1.redbubble.net/image.3071364065.7610/flat,128x,075,f-pad,128x128,f8f8f8.jpg" alt="Image" class="imageThree" />
+
+
+
+
+    <button class="start" onclick="startGame()">Start!</button>
+
+    <button class="stop" onclick="stopGame()">Pause</button>
+
+    <p class="score"></p>
+</body>
+
+</html>
